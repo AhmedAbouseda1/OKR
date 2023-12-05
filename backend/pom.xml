@@ -4,8 +4,8 @@
          xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
     <modelVersion>4.0.0</modelVersion>
 
-    <groupId>react-admin-spring-boot-backend</groupId>
-    <artifactId>react-admin-spring-boot-backend</artifactId>
+    <groupId>okr-service</groupId>
+    <artifactId>okr-service</artifactId>
     <version>0.1-SNAPSHOT</version>
     <parent>
         <groupId>org.springframework.boot</groupId>
@@ -270,6 +270,10 @@
             <artifactId>datasource-proxy</artifactId>
             <version>1.7</version>
         </dependency>
+        <dependency>
+            <groupId>org.flywaydb</groupId>
+            <artifactId>flyway-core</artifactId>
+            <version>10.1.0</version>
+        </dependency>
     </dependencies>
-
 </project>

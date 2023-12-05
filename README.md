@@ -97,9 +97,9 @@ mvn spring-boot:run
 You will need to have git installed as well as Docker.
 
 ```bash
-git clone https://github.com/danielsobrado/react-admin-spring-boot-backend
-cd react-admin-spring-boot-backend
-docker build -t react-admin-spring-boot-backend frontend
+git clone https://github.com/danielsobrado/okr-service
+cd okr-service
+docker build -t okr-service frontend
 ```
 
 Start the Docker container by binding the front-end to an external port.

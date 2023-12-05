@@ -9,7 +9,7 @@
             "name": "Launch ReactAdminDemoApplication",
             "request": "launch",
             "mainClass": "demo.reactAdmin.ReactAdminDemoApplication",
-            "projectName": "react-admin-spring-boot-backend"
+            "projectName": "okr-service"
         },
         {
             "type": "java",

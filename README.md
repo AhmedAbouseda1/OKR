@@ -85,6 +85,10 @@ yarn start
 ```
 
 ## How to run: Back-End
+## Flyway Migrations
+
+Flyway is integrated to manage database migrations. When the Flyway property is enabled in the `application.properties` file, Flyway will automatically run the migrations on application startup. Ensure that the Flyway settings are properly configured before starting the application to apply the database migrations.
+
 
 The Spring Boot backend is available in the /backend folder, you can compile it and start it with:
 

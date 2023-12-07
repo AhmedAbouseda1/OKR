@@ -15,7 +15,7 @@ import {
 import { createTheme, makeStyles } from '@material-ui/core/styles';
 import { ThemeProvider } from '@material-ui/styles';
 import LockIcon from '@material-ui/icons/Lock';
-import { Notification, useTranslate, useLogin, useNotify } from 'react-admin';
+import { Notification, useTranslate, useLogin, useNotify, useLocale } from 'react-admin';
 
 import { lightTheme } from './themes';
 
@@ -198,10 +198,19 @@ Login.propTypes = {
 // We need to put the ThemeProvider decoration in another component
 // Because otherwise the useStyles() hook used in Login won't get
 // the right theme
-const LoginWithTheme = (props: any) => (
-    <ThemeProvider theme={createTheme(lightTheme)}>
-        <Login {...props} />
-    </ThemeProvider>
-);
+const LoginWithTheme = (props: any) => {
+    const locale = useLocale();
+    const direction = locale === 'fr' ? 'rtl' : 'ltr';
+    const theme = createTheme({
+        ...lightTheme,
+        direction: direction,
+    });
+
+    return (
+        <ThemeProvider theme={theme}>
+            <Login {...props} />
+        </ThemeProvider>
+    );
+};
 
 export default LoginWithTheme;

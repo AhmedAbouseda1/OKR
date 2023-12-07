@@ -1,3 +1,5 @@
+import { createMuiTheme, rtl } from '@material-ui/core/styles';
+
 export const darkTheme = {
     palette: {
         primary: {
@@ -46,6 +48,13 @@ export const darkTheme = {
         },
     },
 };
+
+// RTL theme configuration
+export const rtlTheme = createMuiTheme({
+    ...lightTheme,
+    direction: 'rtl',
+    // Add rtl plugin configuration if necessary
+});
 
 export const lightTheme = {
     palette: {

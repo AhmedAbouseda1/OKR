@@ -1,5 +1,6 @@
 import { TranslationMessages } from 'react-admin';
 import englishMessages from 'ra-language-english';
+import { createMuiTheme, rtl } from '@material-ui/core/styles';
 
 const customEnglishMessages: TranslationMessages = {
     ...englishMessages,
@@ -33,6 +34,7 @@ const customEnglishMessages: TranslationMessages = {
                 demo_button: 'Source for this demo',
             },
         },
+        direction: 'ltr',
         menu: {
             sales: 'Sales',
             catalog: 'Catalog',
